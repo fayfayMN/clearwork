@@ -61,6 +61,6 @@ if bc2.button("Reset everything", help="Clear all data"):
     st.rerun()
 
 st.divider()
-st.caption("© 2026 [Your Name]. All rights reserved. "
+st.caption("© 2026 Feifei Li. All rights reserved. "
            "Clearwork is proprietary software — source available for review only. "
            "Commercial use requires written permission.")
