@@ -59,3 +59,8 @@ if bc2.button("Reset everything", help="Clear all data"):
     init_state(st)
     save(st)
     st.rerun()
+
+st.divider()
+st.caption("© 2026 [Your Name]. All rights reserved. "
+           "Clearwork is proprietary software — source available for review only. "
+           "Commercial use requires written permission.")
