@@ -1,5 +1,7 @@
 # 🔍 Clearwork
 
+**👉 Open the app: https://fayfaymn-clearwork-app-umkucc.streamlit.app/**
+
 Track who did what, confirm it with peers, and turn the record into
 **verified proof of contribution** — a resume card that's more credible
 than a self-reported bullet point.
