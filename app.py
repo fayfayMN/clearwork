@@ -10,10 +10,12 @@ Run locally:
 
 import streamlit as st
 
+from clearwork.gate import require_access
 from clearwork.store import init_state, load_demo, save
 
 st.set_page_config(page_title="Clearwork", page_icon="🔍", layout="wide")
 init_state(st)
+require_access()
 
 st.title("🔍 Clearwork")
 st.caption("Track who did what, confirm it with peers, and turn the record into "

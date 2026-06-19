@@ -2,11 +2,13 @@
 
 import streamlit as st
 
+from clearwork.gate import require_access
 from clearwork.models import Member, Project
 from clearwork.store import init_state, save
 
 st.set_page_config(page_title="Team Setup · Clearwork", page_icon="👥", layout="wide")
 init_state(st)
+require_access()
 
 st.title("👥 Team Setup")
 st.caption("Add your team members and create projects. A project is any bounded "

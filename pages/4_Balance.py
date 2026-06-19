@@ -7,11 +7,13 @@ analysis is deterministic and explainable — same philosophy as Team OS.
 
 import streamlit as st
 
+from clearwork.gate import require_access
 from clearwork import balance
 from clearwork.store import init_state
 
 st.set_page_config(page_title="Balance · Clearwork", page_icon="⚖️", layout="wide")
 init_state(st)
+require_access()
 
 st.title("⚖️ Contribution Balance")
 st.caption("Is work distributed fairly? This isn't a ranking — it's an early "

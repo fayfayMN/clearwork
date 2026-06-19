@@ -10,11 +10,13 @@ from datetime import date
 
 import streamlit as st
 
+from clearwork.gate import require_access
 from clearwork.models import CONFIRM_CODES, Confirmation
 from clearwork.store import init_state, save
 
 st.set_page_config(page_title="Confirm · Clearwork", page_icon="✅", layout="wide")
 init_state(st)
+require_access()
 
 st.title("✅ Peer Confirmation")
 st.caption("Review your teammates' contributions. This isn't a rating — it's a "

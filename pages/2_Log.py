@@ -7,11 +7,13 @@ are optional connections back to Team OS structure.
 
 import streamlit as st
 
+from clearwork.gate import require_access
 from clearwork.models import Contribution
 from clearwork.store import init_state, save
 
 st.set_page_config(page_title="Log · Clearwork", page_icon="📝", layout="wide")
 init_state(st)
+require_access()
 
 st.title("📝 Log Contributions")
 st.caption("Record what you *delivered*, not how long you spent. Deliverables "

@@ -7,11 +7,13 @@ peer-confirmed project card beats a self-reported resume bullet.
 
 import streamlit as st
 
+from clearwork.gate import require_access
 from clearwork import resume_card
 from clearwork.store import init_state
 
 st.set_page_config(page_title="Resume Card · Clearwork", page_icon="🏆", layout="wide")
 init_state(st)
+require_access()
 
 st.title("🏆 Resume Card")
 st.caption("Generate a verified project card for any team member. Peer "
